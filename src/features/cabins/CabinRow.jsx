@@ -14,6 +14,8 @@ const TableRow = styled.div`
   align-items: center;
   padding: 1.4rem 2.4rem;
 
+  transition: all 0.3 ease;
+
   &:not(:last-child) {
     border-bottom: 1px solid var(--color-grey-100);
   }
