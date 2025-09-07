@@ -90,7 +90,7 @@ function Toggle({ id }) {
     const rect = e.target.closest("button").getBoundingClientRect();
     setPosition({
       x: window.innerWidth - rect.width - rect.x,
-      y: rect.y + rect.height + 8,
+      y: rect.bottom + window.scrollY + 8,
     });
 
     openId === id ? close() : open(id);

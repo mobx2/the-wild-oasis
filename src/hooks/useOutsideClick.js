@@ -5,6 +5,8 @@ export function useOutsideClick(handler, listenCapturing = true) {
 
   useEffect(() => {
     function handleClick(e) {
+      if (e.target.closest("[data-toggle]")) return;
+
       if (ref.current && !ref.current.contains(e.target)) {
         handler();
       }
