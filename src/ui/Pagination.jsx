@@ -83,7 +83,7 @@ function Pagination({ count }) {
   return (
     <StyledPagination>
       <p>
-        Showing
+        Sowing
         <span> {(currentPage - 1) * PAGE_SIZE + 1} </span> to
         <span>
           {" "}
