@@ -3,6 +3,7 @@ import LoginForm from "../features/authentication/LoginForm";
 
 import Logo from "../ui/Logo";
 import Heading from "../ui/Heading";
+import CabinTable from "../features/cabins/CabinTable";
 
 const LoginLayout = styled.main`
   min-height: 100vh;
@@ -20,6 +21,7 @@ function Login() {
       <Logo />
       <Heading as="h4">Log in to your account</Heading>
       <LoginForm />
+      <CabinTable />
     </LoginLayout>
   );
 }
